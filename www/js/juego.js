@@ -111,5 +111,8 @@ if ('addEventListener' in document) {
   game.state.start('main');
 }, false);
 }
-var game = new Phaser.Game(360, 615);
+
+
+var game= new Phaser.Game(360, 615, Phaser.CANVAS, 'bloque_juego')
+
 game.state.add('main', mainState);
